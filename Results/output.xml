@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.8.5 on win32)" generated="20220706 02:36:50.208" rpa="false" schemaversion="3">
+<suite id="s1" name="Login" source="C:\Users\sayam\PycharmProjects\PDDSLogin\TestSuites\Login\login.robot">
+<test id="s1-t1" name="Open Browser And Navigate" line="17">
+<kw name="Navigate To Pdds" library="Login">
+<arg>${url}</arg>
+<status status="PASS" starttime="20220706 02:36:50.402" endtime="20220706 02:36:55.782"/>
+</kw>
+<doc>This should open the browser and navigate to url</doc>
+<status status="PASS" starttime="20220706 02:36:50.401" endtime="20220706 02:36:55.782"/>
+</test>
+<test id="s1-t2" name="Input Username And Password" line="23">
+<kw name="Input Username And Password" library="Login">
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" starttime="20220706 02:36:55.783" endtime="20220706 02:36:55.899"/>
+</kw>
+<doc>This should input username and password in the respective fields</doc>
+<status status="PASS" starttime="20220706 02:36:55.783" endtime="20220706 02:36:55.899"/>
+</test>
+<test id="s1-t3" name="Login To Dashboard" line="27">
+<kw name="Login Button Click" library="Login">
+<status status="PASS" starttime="20220706 02:36:55.900" endtime="20220706 02:37:05.117"/>
+</kw>
+<doc>This should input the credentials text and login</doc>
+<status status="PASS" starttime="20220706 02:36:55.900" endtime="20220706 02:37:05.118"/>
+</test>
+<test id="s1-t4" name="Validate Login" line="34">
+<kw name="Validate Login" library="Login">
+<var>${validation}</var>
+<arg>${title}</arg>
+<msg timestamp="20220706 02:37:05.130" level="INFO">${validation} = True</msg>
+<status status="PASS" starttime="20220706 02:37:05.121" endtime="20220706 02:37:05.130"/>
+</kw>
+<kw name="Should Be True" library="BuiltIn">
+<arg>${validation}</arg>
+<doc>Fails if the given condition is not true.</doc>
+<status status="PASS" starttime="20220706 02:37:05.130" endtime="20220706 02:37:05.130"/>
+</kw>
+<kw name="Close Test Browser" library="browser">
+<status status="PASS" starttime="20220706 02:37:05.130" endtime="20220706 02:37:09.304"/>
+</kw>
+<doc>This should validate the page title</doc>
+<status status="PASS" starttime="20220706 02:37:05.120" endtime="20220706 02:37:09.305"/>
+</test>
+<doc>A test suite for valid login and logout.</doc>
+<status status="PASS" starttime="20220706 02:36:50.209" endtime="20220706 02:37:09.307"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Login">Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
